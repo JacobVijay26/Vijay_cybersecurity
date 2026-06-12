@@ -31,7 +31,7 @@ I am a **Bachelor of Computer Applications (BCA)** graduate with a strong founda
 | Certification | Issuing Body | Year |
 |---|---|---|
 | Certified Cyber Security and Ethical Hacking | Apponix Accademy | 2026 |
-| BCA — Bachelor of Computer Applications | Bengaluru City University | 2026 |
+| BCA — Bachelor of Computer Applications | Bengaluru City University | 2023 |
 
 ---
 
