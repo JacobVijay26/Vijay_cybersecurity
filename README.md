@@ -61,6 +61,12 @@ I am a **Bachelor of Computer Applications (BCA)** graduate with a strong founda
 
 ---
 
+## 🔬 Featured Projects
+
+- 📄 [Penetration Test Reports](./01-Pentest-Reports) — Full Metasploitable2 black-box pentest
+- 📋 [Incident Response Playbooks](./02-IR-Playbooks) — NIST-based ransomware IR playbook
+- 🦈 [Wireshark Traffic Analysis](./03-Wireshark-Captures) — Exploit traffic captures and analysis
+
 ## Featured Projects
 
 ### [Network Vulnerability Scanner](https://github.com/yourusername/network-vuln-scanner)
