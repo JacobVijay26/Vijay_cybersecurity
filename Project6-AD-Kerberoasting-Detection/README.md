@@ -1,5 +1,3 @@
-
-[README.md](https://github.com/user-attachments/files/29914539/README.md)
 # Active Directory Kerberoasting Detection Lab
 
 A self-hosted Active Directory lab simulating a Kerberoasting attack (MITRE ATT&CK **T1558.003**) and building a working Splunk detection, dashboard, and scheduled alert for it.
