@@ -1,131 +1,56 @@
-<h1 align="center">Hi there, I'm [Your Name] 👋</h1>
+<h1 align="center">Hi, I'm Vijay 👋</h1>
+<h3 align="center">Cybersecurity Professional | Aspiring SOC Analyst & Detection Engineer</h3>
 
 <p align="center">
-  <b>BCA Graduate &nbsp;|&nbsp; Cybersecurity Analyst &nbsp;|&nbsp; Ethical Hacker</b><br/>
-  <i>Securing systems. Thinking like an attacker. Building defenses.</i>
-</p>
-
-<p align="center">
-  <a href="https://linkedin.com/in/yourprofile"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="mailto:youremail@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://tryhackme.com/p/yourusername"><img src="https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white"/></a>
-  <a href="https://hackthebox.eu/profile/yourprofile"><img src="https://img.shields.io/badge/HackTheBox-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black"/></a>
+  <a href="mailto:reachvijays20@gmail.com"><img src="https://img.shields.io/badge/Email-reachvijays20%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white"/></a>
+  <a href="https://github.com/JacobVijay26/Vijay_cybersecurity"><img src="https://img.shields.io/badge/Portfolio-Vijay__cybersecurity-181717?style=flat&logo=github&logoColor=white"/></a>
 </p>
 
 ---
 
-## About Me
+### 🎯 About Me
 
-I am a **Bachelor of Computer Applications (BCA)** graduate with a strong foundation in computer science and a specialized focus on **cybersecurity** and **ethical hacking**. I am passionate about identifying vulnerabilities before malicious actors do — and building robust defenses around critical systems.
+I'm transitioning into cybersecurity from a background in enterprise process operations (Senior Process Executive, Infosys BPM), backed by a **BCA degree** and hands-on cybersecurity training. I'm building a structured, MITRE ATT&CK-mapped portfolio spanning both **defensive (Blue Team)** and **offensive (Red Team)** security, targeting roles in **SOC Analysis, Detection Engineering, and Penetration Testing**.
 
-- **Education:** BCA — [Your University Name], [Year of Graduation]
-- **Certifications:** Certified Ethical Hacker (CEH) | [Other Certification Name]
-- **Focus Areas:** Penetration Testing · Network Security · Web Application Security · OSINT
-- **Currently Learning:** Advanced malware analysis, cloud security (AWS/Azure)
-- **Looking For:** Cybersecurity analyst / penetration tester roles
+Every project in my portfolio follows the same delivery discipline: build the lab infrastructure → execute the attack or detection logic → produce a professional findings report or Splunk dashboard → document and publish. I care about doing the full cycle properly, not just running a tool and taking a screenshot.
 
 ---
 
-## Certifications & Credentials
+### 🛠️ Core Skills & Tools
 
-| Certification | Issuing Body | Year |
+**SIEM & Detection:** Splunk Enterprise, Sysmon (SwiftOnSecurity config), Windows Event Log analysis, MITRE ATT&CK mapping
+
+**Offensive Security:** Burp Suite, Nmap, Hydra, sqlmap, Metasploit, Impacket, John the Ripper, BloodHound *(in progress)*
+
+**Infrastructure:** Active Directory (Windows Server 2022), VMware Workstation, Linux (Ubuntu, Kali), LAMP stack administration
+
+**Vulnerability Classes:** SQL Injection (in-band & blind), XSS (stored & reflected), broken authentication, Active Directory attack paths (Kerberoasting, privilege escalation)
+
+---
+
+### 📂 Featured Projects
+
+A structured, numbered progression through core SOC/pentest skills — full write-ups in my [portfolio repository](https://github.com/JacobVijay26/Vijay_cybersecurity):
+
+| # | Project | Focus |
 |---|---|---|
-| Certified Ethical Hacker (CEH) | EC-Council | 2024 |
-| [Cybersecurity Certification Name] | [Issuing Body] | 2024 |
-| BCA — Bachelor of Computer Applications | [University Name] | [Year] |
+| 1–6 | Foundational SOC & AD Detection Labs | Active Directory attack simulation, Splunk detection engineering, Sysmon-based threat hunting |
+| 7 | Web Application Pentest Lab (DVWA) | SQL Injection, Blind SQLi, Stored/Reflected XSS, Broken Authentication — full CVSS scoring & MITRE mapping |
+
+**On the roadmap:** advanced AD attack chain detection, network traffic analysis (Suricata/Snort), phishing & malware execution detection, BloodHound-driven privilege escalation, buffer overflow exploit development, and a cross-project threat hunting dashboard.
 
 ---
 
-## Technical Skills
+### 📈 Currently Learning / Up Next
 
-**Penetration Testing & Ethical Hacking**
-- Tools: Metasploit · Burp Suite · Nmap · Wireshark · Nikto · SQLmap · Hydra
-- Techniques: Reconnaissance · Exploitation · Post-exploitation · Privilege escalation
-
-**Networking & Security**
-- TCP/IP, DNS, HTTP/S, VPN, Firewalls, IDS/IPS
-- Network packet analysis with Wireshark and tcpdump
-
-**Operating Systems**
-- Kali Linux · Parrot OS · Ubuntu · Windows Server
-
-**Web Application Security**
-- OWASP Top 10 · XSS · SQL Injection · CSRF · IDOR · Broken Authentication
-
-**Programming & Scripting**
-- Python (automation, exploit scripting)
-- Bash scripting
-- Basic knowledge of C, Java
-
-**Platforms & Labs**
-- TryHackMe · Hack The Box · VulnHub
+- Preparing for **CompTIA Security+**
+- Deepening Active Directory attack path analysis with BloodHound
+- Building out a purple-team project combining offensive AD attack chains with defensive detection from both sides
 
 ---
 
-## Featured Projects
+### 📫 Let's Connect
 
-### [Network Vulnerability Scanner](https://github.com/yourusername/network-vuln-scanner)
-> A Python-based tool that automates network reconnaissance and port scanning, reporting open services and known CVEs for discovered hosts.
-- **Tech:** Python · Nmap · Shodan API
-- **Skills demonstrated:** Network enumeration, API integration, report generation
+I'm actively building toward my first cybersecurity role — feel free to reach out at **reachvijays20@gmail.com** or explore the full technical write-ups in my [portfolio](https://github.com/JacobVijay26/Vijay_cybersecurity).
 
----
-
-### [Web App Penetration Testing Report](https://github.com/yourusername/webapp-pentest-report)
-> A full penetration test report for a deliberately vulnerable web application (DVWA), covering SQL injection, XSS, broken authentication, and remediation recommendations.
-- **Tech:** Burp Suite · OWASP ZAP · DVWA
-- **Skills demonstrated:** Web application security, report writing, OWASP methodology
-
----
-
-### [Phishing Awareness Simulation](https://github.com/yourusername/phishing-simulation)
-> A controlled phishing simulation and awareness training framework built for educational purposes, simulating social engineering attack vectors.
-- **Tech:** Python · GoPhish · HTML
-- **Skills demonstrated:** Social engineering, email security, user awareness
-
----
-
-### [CTF Write-ups](https://github.com/yourusername/ctf-writeups)
-> Detailed write-ups for Capture The Flag (CTF) challenges from TryHackMe and Hack The Box — covering web, forensics, cryptography, and reverse engineering.
-
----
-
-## GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=dark&hide_border=true&count_private=true" height="150"/>
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=dark&hide_border=true" height="150"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=dark&hide_border=true"/>
-</p>
-
----
-
-## CTF & Lab Activity
-
-<p align="center">
-  <img src="https://tryhackme-badges.s3.amazonaws.com/yourusername.png" alt="TryHackMe Badge"/>
-</p>
-
----
-
-## Let's Connect
-
-I am open to collaborating on open-source security tools, CTF teams, bug bounty programs, and internship / entry-level cybersecurity roles.
-
-> *"The quieter you become, the more you are able to hear."* — Kali Linux motto
-
-<p align="center">
-  <a href="https://linkedin.com/in/yourprofile"><img src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/></a>
-  &nbsp;
-  <a href="mailto:youremail@gmail.com"><img src="https://img.shields.io/badge/Send_an_Email-EA4335?style=flat-square&logo=gmail&logoColor=white"/></a>
-</p>
-
----
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=yourusername&color=blueviolet&style=flat-square" alt="Profile views"/>
-</p>
+<p align="center"><i>Every project ships with a full report: methodology, evidence, impact, and remediation — not just a screenshot.</i></p>
