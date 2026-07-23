@@ -18,26 +18,31 @@ Every project in my portfolio follows the same delivery discipline: build the la
 
 ### 🛠️ Core Skills & Tools
 
-**SIEM & Detection:** Splunk Enterprise, Sysmon (SwiftOnSecurity config), Windows Event Log analysis, MITRE ATT&CK mapping
+**SIEM & Detection:** Splunk Enterprise, Splunk Universal Forwarder, Sysmon (SwiftOnSecurity config), Windows Event Log analysis, SPL detection engineering, MITRE ATT&CK mapping
 
-**Offensive Security:** Burp Suite, Nmap, Hydra, sqlmap, Metasploit, Impacket, John the Ripper, BloodHound *(in progress)*
+**Offensive Security:** Burp Suite, Nmap, Hydra, sqlmap, Metasploit, Impacket, John the Ripper, Wireshark, BloodHound *(in progress)*
 
 **Infrastructure:** Active Directory (Windows Server 2022), VMware Workstation, Linux (Ubuntu, Kali), LAMP stack administration
 
-**Vulnerability Classes:** SQL Injection (in-band & blind), XSS (stored & reflected), broken authentication, Active Directory attack paths (Kerberoasting, privilege escalation)
+**Vulnerability Classes:** SQL Injection (in-band & blind), XSS (stored & reflected), broken authentication, Kerberoasting, RDP brute-force, Active Directory attack paths
 
 ---
 
 ### 📂 Featured Projects
 
-A structured, numbered progression through core SOC/pentest skills — full write-ups in my [portfolio repository](https://github.com/JacobVijay26/Vijay_cybersecurity):
+A structured, hands-on progression through core SOC/pentest skills — full write-ups in my [portfolio repository](https://github.com/JacobVijay26/Vijay_cybersecurity):
 
-| # | Project | Focus |
-|---|---|---|
-| 1–6 | Foundational SOC & AD Detection Labs | Active Directory attack simulation, Splunk detection engineering, Sysmon-based threat hunting |
-| 7 | Web Application Pentest Lab (DVWA) | SQL Injection, Blind SQLi, Stored/Reflected XSS, Broken Authentication — full CVSS scoring & MITRE mapping |
+| Project | Focus |
+|---|---|
+| Metasploitable2 Penetration Test | Black-box pentest — 4 independent paths to root, full credential lifecycle, extended into DVWA web app testing |
+| Incident Response Playbook (Ransomware) | NIST SP 800-61-aligned IR playbook — kill chain, IOCs, SIEM alert rules, communication templates |
+| Splunk SOC Lab | Nmap scan output engineered into a full ingest → parse → classify → dashboard → alert pipeline |
+| Windows RDP Brute-Force Detection Lab | Splunk detection engineering against Windows Security Event Logs (4624/4625), with real infrastructure troubleshooting |
+| AD Kerberoasting Detection Lab | Self-hosted Active Directory lab — live Kerberoasting attack (T1558.003) + Splunk detection on Event ID 4769 |
+| Web Application Pentest Lab (DVWA) | SQL Injection, Blind SQLi, Stored/Reflected XSS, Broken Authentication — full CVSS scoring & MITRE mapping |
+| Network Traffic Analysis with Wireshark | Packet-level reconstruction of recon, exploitation, and web attack traffic — every finding backed by raw packet evidence |
 
-**On the roadmap:** advanced AD attack chain detection, network traffic analysis (Suricata/Snort), phishing & malware execution detection, BloodHound-driven privilege escalation, buffer overflow exploit development, and a cross-project threat hunting dashboard.
+**On the roadmap:** a Purple Team project (BloodHound-driven privilege escalation paired with DCSync/Golden Ticket detection), a Snort/Suricata IDS lab, and a cross-project threat hunting dashboard.
 
 ---
 
