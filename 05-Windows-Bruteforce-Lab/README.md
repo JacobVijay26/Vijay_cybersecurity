@@ -1,9 +1,9 @@
 # Windows RDP Brute-Force Detection Lab
 
-**Author:** Vijay S
-**Role Target:** SOC Analyst / Entry-Level Penetration Tester
-**Environment:** Splunk Enterprise 10.4.0 · Splunk Universal Forwarder · Kali Linux · Windows 11 Enterprise · Isolated VMnet1 host-only network
-**Project Repo:** [github.com/JacobVijay26/Vijay_cybersecurity](https://github.com/JacobVijay26/Vijay_cybersecurity)
+- **Author:** Vijay S
+- **Role Target:** SOC Analyst / Entry-Level Penetration Tester
+- **Environment:** Splunk Enterprise 10.4.0 · Splunk Universal Forwarder · Kali Linux · Windows 11 Enterprise · Isolated VMnet1 host-only network
+- **Project Repo:** [github.com/JacobVijay26/Vijay_cybersecurity](https://github.com/JacobVijay26/Vijay_cybersecurity)
 
 A Splunk SIEM detection engineering project simulating and detecting an RDP brute-force attack against a Windows 11 host, using native Windows Security Event Logs forwarded through a production-style Splunk Universal Forwarder pipeline.
 
