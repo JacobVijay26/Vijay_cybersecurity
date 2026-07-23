@@ -1,6 +1,15 @@
 # Project 8 — Network Traffic Analysis with Wireshark
 
-Packet-level capture and analysis of reconnaissance, exploitation, and web application attack traffic, using Wireshark to reconstruct each attack directly from the wire rather than relying solely on tool output.
+- **Author:** Vijay S
+- **Role Target:** SOC Analyst / Entry-Level Penetration Tester
+- **Environment:** Wireshark · Nmap · Metasploit Framework · DVWA · Kali Linux · Isolated VMnet1 host-only network
+- **Project Repo:** [github.com/JacobVijay26/Vijay_cybersecurity](https://github.com/JacobVijay26/Vijay_cybersecurity)
+
+Packet-level capture and analysis of reconnaissance, exploitation, and web application attack traffic — reconstructing each attack directly from the wire rather than relying solely on tool output.
+
+📄 **Full report:** [Project8_Wireshark_Report.docx](./Project8_Wireshark_Report.docx) · [PDF version](./Project8_Wireshark_Report.pdf)
+
+---
 
 ## Objective
 
@@ -16,13 +25,18 @@ Capture live traffic across three distinct attack scenarios and demonstrate that
 
 All hosts sit on a VMnet1 host-only network (192.168.100.0/24), consistent with every other project in this portfolio.
 
+---
+
 ## Scenarios Captured
 
-| # | Capture File | Scenario | Key Evidence |
-|---|---|---|---|
-| 1 | `02_nmap_recon.pcapng` | Nmap service/OS detection scan | SYN scan fingerprint, 23 open ports confirmed via SYN-ACK, vsFTPd 2.3.4 banner disclosure |
-| 2 | `03_samba_exploit.pcapng` | Samba `usermap_script` remote exploit | Full malicious command reconstructed from raw SMB packet bytes |
-| 3 | `04_dvwa_web_attacks.pcapng` | DVWA SQL Injection + Reflected XSS | Cleartext credential leak, unsanitized XSS reflection, disabled browser XSS protection header |
+| # | Capture File | Scenario | Key Evidence | MITRE ATT&CK |
+|---|---|---|---|---|
+| 1 | `02_nmap_recon.pcapng` | Nmap service/OS detection scan | SYN scan fingerprint, 23 open ports confirmed via SYN-ACK, vsFTPd 2.3.4 banner disclosure | T1595 — Active Scanning |
+| 2 | `03_samba_exploit.pcapng` | Samba `usermap_script` remote exploit | Full malicious command reconstructed from raw SMB packet bytes | T1210 — Exploitation of Remote Services |
+| 3 | `04_dvwa_web_attacks.pcapng` | DVWA SQL Injection | Full credential table leaked in cleartext HTTP, cross-validated with Project 7 | T1190 — Exploit Public-Facing Application |
+| 4 | `04_dvwa_web_attacks.pcapng` | DVWA Reflected XSS | Unsanitized payload reflection with browser XSS protection explicitly disabled | T1189 — Drive-by Compromise |
+
+---
 
 ## Highlights
 
@@ -37,7 +51,7 @@ Wireshark, Nmap, Metasploit Framework, DVWA, Kali Linux
 
 ## Repository Contents
 
-- `Project8_Wireshark_Report.docx` — full analysis report (methodology, evidence, impact, MITRE ATT&CK mapping, remediation)
+- `Project8_Wireshark_Report.docx` / `.pdf` — full analysis report (methodology, evidence, impact, MITRE ATT&CK mapping, remediation)
 - `screenshots/` — key evidence captures referenced in the report
 
 ## Related Projects
