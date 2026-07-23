@@ -30,7 +30,7 @@ This project walks through the full lifecycle of a Kerberoasting attack:
 
 All VMs run on an isolated VMware Workstation host-only network (VMnet1, `192.168.100.0/24`).
 
-![Architecture Diagram](./screenshots/00_architecture.png)
+![Architecture Diagram](./images/00_architecture.png)
 
 ## Tools Used
 
