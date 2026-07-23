@@ -1,10 +1,23 @@
 # Windows RDP Brute-Force Detection Lab
 
+**Author:** Vijay S
+**Role Target:** SOC Analyst / Entry-Level Penetration Tester
+**Environment:** Splunk Enterprise 10.4.0 · Splunk Universal Forwarder · Kali Linux · Windows 11 Enterprise · Isolated VMnet1 host-only network
+**Project Repo:** [github.com/JacobVijay26/Vijay_cybersecurity](https://github.com/JacobVijay26/Vijay_cybersecurity)
+
 A Splunk SIEM detection engineering project simulating and detecting an RDP brute-force attack against a Windows 11 host, using native Windows Security Event Logs forwarded through a production-style Splunk Universal Forwarder pipeline.
 
 This lab complements an earlier all-Linux SOC lab by adding Windows Event Log coverage (Event IDs 4624/4625), and demonstrates the full detection engineering lifecycle: infrastructure build → attack execution → detection logic → alerting → dashboarding → documentation.
 
-📄 **Full report:** [Windows_RDP_Brute_Force_Lab_Report_Vijay_S.docx](./Windows_RDP_Brute_Force_Lab_Report_Vijay_S.docx)
+📄 **Full report:** [Windows_RDP_Brute_Force_Lab_Report_Vijay_S.docx](./Windows_RDP_Brute_Force_Lab_Report_Vijay_S.docx) · [PDF version](./Windows_RDP_Brute_Force_Lab_Report_Vijay_S.pdf)
+
+---
+
+## MITRE ATT&CK Mapping
+
+| Technique | ID |
+|---|---|
+| Brute Force | [T1110](https://attack.mitre.org/techniques/T1110/) |
 
 ---
 
@@ -132,7 +145,24 @@ A two-panel dashboard summarizes the detection: a results table (account, source
 
 ---
 
+## Repository Contents
+
+| File | Description |
+|---|---|
+| `README.md` | This document |
+| `Windows_RDP_Brute_Force_Lab_Report_Vijay_S.docx` | Full professional project report (includes embedded screenshots) |
+| `Windows_RDP_Brute_Force_Lab_Report_Vijay_S.pdf` | PDF version of the same report |
+| `screenshots/01_hydra_attack_initial.png` | Hydra RDP brute-force attempt |
+| `screenshots/03_detection_search_result.png` | SPL detection search result |
+| `screenshots/04_save_as_alert_config.png` | Saved alert configuration |
+| `screenshots/07_clock_after_fix.png` | Clock synchronization before/after fix |
+| `screenshots/11_alert_trigger_history.png` | Alert firing automatically on schedule |
+| `screenshots/13_final_dashboard.png` | Final two-panel analyst dashboard |
+
+---
+
 ## Related Projects
 
-- [Metasploitable2 SOC Lab](../04-Splunk-SOC-Lab/) — the earlier Linux-focused detection lab this project complements
+- [Splunk SOC Lab](../04-Splunk-SOC-Lab/) — the earlier Linux-focused detection lab this project complements
 
+Part of a broader cybersecurity portfolio spanning blue team detection engineering and red team offensive security. See the [profile README](https://github.com/JacobVijay26/Vijay_cybersecurity) for the full project index.
