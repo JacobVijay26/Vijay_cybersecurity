@@ -25,6 +25,43 @@ Capture live traffic across three distinct attack scenarios and demonstrate that
 
 All hosts sit on a VMnet1 host-only network (192.168.100.0/24), consistent with every other project in this portfolio.
 
+## Architecture
+
+```
+┌────────────────────────┐
+│      Kali Linux         │
+│   192.168.100.129       │
+│  (Attacker + Capture)   │
+│                          │
+│  Wireshark on eth0 ─────┼── captures every packet in both directions
+└────────────┬─────────────┘
+             │
+             │   Scenario 1: Nmap scan
+             │   Scenario 2: Samba usermap_script exploit
+             ▼
+┌────────────────────────┐
+│    Metasploitable2      │
+│   192.168.100.128       │
+│  (Recon + Exploit       │
+│       target)            │
+└──────────────────────────┘
+
+             Kali Linux (same host, same capture)
+             │
+             │   Scenario 3: DVWA SQL Injection
+             │   Scenario 4: DVWA Reflected XSS
+             ▼
+┌────────────────────────┐
+│      DVWA-Ubuntu        │
+│    192.168.100.30       │
+│  (Web application       │
+│       target)             │
+└──────────────────────────┘
+
+  All traffic isolated on VMnet1 (host-only, 192.168.100.0/24)
+  Each scenario saved as its own .pcapng for isolated analysis
+```
+
 ---
 
 ## Scenarios Captured
