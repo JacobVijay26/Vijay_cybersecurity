@@ -1,5 +1,10 @@
 # Active Directory Kerberoasting Detection Lab
 
+- **Author:** Vijay S
+- **Role Target:** SOC Analyst / Entry-Level Penetration Tester
+- **Environment:** Windows Server 2022 (AD DS) · Splunk Enterprise 10.4.0 · Kali Linux · Impacket · Isolated VMnet1 host-only network
+- **Project Repo:** [github.com/JacobVijay26/Vijay_cybersecurity](https://github.com/JacobVijay26/Vijay_cybersecurity)
+
 A self-hosted Active Directory lab simulating a Kerberoasting attack (MITRE ATT&CK **T1558.003**) and building a working Splunk detection, dashboard, and scheduled alert for it.
 
 ## Overview
@@ -12,7 +17,7 @@ This project walks through the full lifecycle of a Kerberoasting attack:
 4. Detect the attack in Splunk using Windows Security Event ID 4769
 5. Build a dashboard and a scheduled alert around the detection
 
-Full write-up, screenshots, and analysis are in [`AD_Kerberoasting_Detection_Lab_Report.docx`](./AD_Kerberoasting_Detection_Lab_Report.docx).
+📄 **Full report:** [AD_Kerberoasting_Detection_Lab_Report.docx](./AD_Kerberoasting_Detection_Lab_Report.docx) · [PDF version](./AD_Kerberoasting_Detection_Lab_Report.pdf)
 
 ## Architecture
 
@@ -25,7 +30,7 @@ Full write-up, screenshots, and analysis are in [`AD_Kerberoasting_Detection_Lab
 
 All VMs run on an isolated VMware Workstation host-only network (VMnet1, `192.168.100.0/24`).
 
-![Architecture Diagram](./images/00_architecture.png)
+![Architecture Diagram](./screenshots/00_architecture.png)
 
 ## Tools Used
 
@@ -76,10 +81,19 @@ index=main sourcetype=WinEventLog:Security EventCode=4769 Ticket_Encryption_Type
 - Monitor Event ID 4769 with RC4 encryption type as a standing detection rule
 - Regularly audit Active Directory for accounts with unnecessary SPNs
 
-## Full Report
+## Repository Contents
+
+| File | Description |
+|---|---|
+| `README.md` | This document |
+| `AD_Kerberoasting_Detection_Lab_Report.docx` | Full professional project report (includes embedded screenshots) |
+| `AD_Kerberoasting_Detection_Lab_Report.pdf` | PDF version of the same report |
+| `screenshots/00_architecture.png` | Lab network architecture diagram |
 
 See [`AD_Kerberoasting_Detection_Lab_Report.docx`](./AD_Kerberoasting_Detection_Lab_Report.docx) for the complete write-up, including build steps, troubleshooting notes (Sysmon channel permissions on a Domain Controller, VM clock drift and its effect on Kerberos), false-positive analysis, and lab cleanup/teardown steps.
 
 ---
-*Part of a hands-on cybersecurity portfolio — see the [root README](../../README.md) for other projects.*
 
+## Related Projects
+
+Part of a broader cybersecurity portfolio spanning blue team detection engineering and red team offensive security. See the [profile README](https://github.com/JacobVijay26/Vijay_cybersecurity) for the full project index.
