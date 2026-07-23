@@ -1,4 +1,4 @@
-# Splunk SOC Lab — Nmap Threat Detection & Risk Triage
+# Project — Splunk SOC Lab: Nmap Threat Detection & Risk Triage
 
 **Author:** Vijay S
 **Role Target:** SOC Analyst / Entry-Level Penetration Tester
@@ -179,3 +179,9 @@ index=main sourcetype=nmap_scan earliest=0
 - Add visualization panels (severity distribution bar/pie chart)
 - Build correlation searches across attack stages
 - Progress toward Splunk Core Certified User / Power User certification
+
+---
+
+## Related Projects
+
+Part of a broader cybersecurity portfolio spanning blue team detection engineering and red team offensive security. See the [profile README](https://github.com/JacobVijay26/Vijay_cybersecurity) for the full project index.
