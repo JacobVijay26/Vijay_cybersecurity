@@ -1,9 +1,9 @@
 # Project — Splunk SOC Lab: Nmap Threat Detection & Risk Triage
 
-**Author:** Vijay S
-**Role Target:** SOC Analyst / Entry-Level Penetration Tester
-**Environment:** Splunk Enterprise 10.4.0 (Windows host) · Kali Linux · Metasploitable2 · Isolated VMnet1 host-only network
-**Project Repo:** [github.com/JacobVijay26/Vijay_cybersecurity](https://github.com/JacobVijay26/Vijay_cybersecurity)
+- **Author:** Vijay S
+- **Role Target:** SOC Analyst / Entry-Level Penetration Tester
+- **Environment:** Splunk Enterprise 10.4.0 (Windows host) · Kali Linux · Metasploitable2 · Isolated VMnet1 host-only network
+- **Project Repo:** [github.com/JacobVijay26/Vijay_cybersecurity](https://github.com/JacobVijay26/Vijay_cybersecurity)
 
 ---
 
